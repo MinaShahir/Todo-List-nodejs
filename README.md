@@ -37,9 +37,6 @@ Kubernetes Cluster
 ↓
 Argo CD
 
-yaml
-Copy code
-
 ---
 
 ## 🛠 Technologies Used
@@ -79,9 +76,6 @@ Todo-List-nodejs/
 ├── assets/
 └── README.md
 
-yaml
-Copy code
-
 ---
 
 ## 🚀 Implemented Steps (Up to Step 6)
@@ -111,20 +105,12 @@ Copy code
 - Git repository connected
 - App auto-synced and healthy
 
-> ⛔ Step 7 (Advanced CD automation) intentionally skipped for now.
-
 ---
 
 ## 🌐 Access
 
 - **Application:** http://192.168.190.129:30080
 - **Argo CD UI:** http://192.168.190.129:32567
-
----
-
-## 📸 Screenshots
-
-> _(Add your screenshots here later if needed)_
 
 ---
 
@@ -165,6 +151,9 @@ This project is designed as a **real-world DevOps learning project**, focusing o
 ✔ Argo CD Synced  
 ✔ Kubernetes Running  
 
+---
+
+## 📸 Screenshots
 
 Home Page:
 
