@@ -164,3 +164,25 @@ This project is designed as a **real-world DevOps learning project**, focusing o
 ✔ CI Pipeline Working  
 ✔ Argo CD Synced  
 ✔ Kubernetes Running  
+
+
+Home Page:
+
+![4080f91d-3ceb-4aa4-928c-5f766cf6df51](https://github.com/user-attachments/assets/63b34a98-ad96-4a15-a8ce-8911a79fb29f)
+
+Dashboard:
+
+![b5d5f9b6-6db9-44ca-8496-64d6f108fa84](https://github.com/user-attachments/assets/41a537a3-9049-4299-82cd-83a5a5751076)
+
+Add Task Form:
+
+![005c8a7f-2caa-463d-8926-45e31b091f2b](https://github.com/user-attachments/assets/d3c3ec89-52d4-4cfa-a743-ca4ad1844d63)
+
+All Tasks View:
+
+![c3572a85-41e9-490d-8a95-e1fd02c654c6](https://github.com/user-attachments/assets/f08eb9a4-b57e-4129-836d-09adfaf19c70)
+
+Argo CD:
+
+![279e4fa5-7bcf-462f-aa13-273bec34c3e1](https://github.com/user-attachments/assets/749f1077-594c-4205-a051-1c330a5ccacb)
+
