@@ -1,191 +1,166 @@
-📝 Todo List Application – DevOps Project
-📌 Project Overview
+# Todo-List-nodejs 🚀
 
-This project is a full DevOps implementation of a Todo List web application built using Node.js and MongoDB, containerized with Docker, deployed on Kubernetes, and automated using CI/CD pipelines with GitHub Actions and Argo CD (GitOps).
+## DevOps Project – Docker, CI/CD, Kubernetes & Argo CD
 
-The goal of this project is to demonstrate real-world DevOps practices, starting from source code to automated deployment on a Kubernetes cluster.
+A full DevOps implementation for a Node.js To-Do List application, covering containerization, CI pipeline, Kubernetes deployment, and GitOps using Argo CD.
 
-📚 Documentation
+---
 
-📄 Project Documentation
-👉 Under continuous improvement (Step 6 completed)
+## 📝 Project Description
 
-🧠 Application Description
+This project is a **Node.js To-Do List web application** enhanced with a **complete DevOps workflow**.
 
-The Todo List application is a web-based application that allows users to create and manage daily tasks.
+The application allows users to:
+- Create tasks
+- Update task status
+- Delete tasks
+- Persist data using MongoDB
 
-Application Flow:
+On top of the application layer, the project implements:
+- Docker containerization
+- CI pipeline with GitHub Actions
+- Kubernetes deployment
+- GitOps continuous delivery using Argo CD
 
-Users can add new tasks using a form
+---
 
-Tasks are stored in MongoDB Atlas
+## 🧱 Architecture Overview
 
-Tasks can be marked as completed or deleted
-
-Views are rendered using EJS
-
-Styled with CSS and client-side JavaScript
-
-🏗️ DevOps Architecture
-Developer (Local VM)
-   ↓ git push
-GitHub Repository
-   ↓
-GitHub Actions (CI)
-   - Build Docker image
-   - Push image to Docker Hub
-   ↓
-Argo CD (GitOps CD)
-   - Watches GitHub repo
-   - Syncs Kubernetes manifests
-   ↓
-Kubernetes Cluster
-   - Deployment
-   - Service (NodePort)
-
-🛠️ Technologies Used
-Application
-
-Node.js
-
-Express.js
-
-EJS
-
-JavaScript
-
-CSS
-
-Database
-
-MongoDB Atlas
-
-Mongoose
-
-DevOps & Cloud
-
-Docker
-
+Developer → GitHub → GitHub Actions (CI)
+|
+↓
 Docker Hub
+|
+↓
+Kubernetes Cluster
+|
+↓
+Argo CD
 
-GitHub Actions (CI)
+yaml
+Copy code
 
-Kubernetes
+---
 
-Argo CD (GitOps CD)
+## 🛠 Technologies Used
 
-📁 Project Structure
+### Application
+- Node.js
+- Express.js
+- EJS
+- MongoDB
+- Mongoose
+
+### DevOps & Cloud Native
+- Docker
+- GitHub Actions (CI)
+- Kubernetes
+- Argo CD (GitOps)
+- Docker Hub
+- Linux (Ubuntu VM)
+
+---
+
+## 📂 Project Structure
+
 Todo-List-nodejs/
-├── .github/workflows/
-│   └── ci.yml                 # CI pipeline (build & push Docker image)
+├── .github/workflows/ci.yml
 ├── k8s/
-│   ├── deployment.yaml        # Kubernetes Deployment
-│   └── service.yaml           # Kubernetes NodePort Service
-├── config/
-├── controllers/
-├── models/
-├── routes/
-├── views/
-├── assets/
+│ ├── deployment.yaml
+│ ├── service.yaml
+├── argocd-app.yaml
 ├── Dockerfile
 ├── index.js
 ├── package.json
-├── package-lock.json
-├── README.md
+├── controllers/
+├── routes/
+├── models/
+├── views/
+├── assets/
+└── README.md
 
-🚀 CI Pipeline (GitHub Actions)
+yaml
+Copy code
 
-The CI pipeline automatically:
+---
 
-Triggers on push to main
+## 🚀 Implemented Steps (Up to Step 6)
 
-Builds Docker image
+### ✅ Step 1: Application Setup
+- Node.js app with Express & MongoDB
 
-Pushes image to Docker Hub
+### ✅ Step 2: Dockerization
+- Dockerfile created
+- Application containerized
+- Image pushed to Docker Hub
 
-📄 CI file:
+### ✅ Step 3: CI Pipeline
+- GitHub Actions workflow
+- Automatic Docker build & push on every commit
 
-.github/workflows/ci.yml
+### ✅ Step 4: Kubernetes Deployment
+- Deployment & Service YAMLs
+- Application exposed via NodePort
 
-🔄 CD Pipeline (Argo CD – GitOps)
+### ✅ Step 5: Argo CD Installation
+- Argo CD installed in Kubernetes
+- UI exposed using NodePort
 
-Argo CD monitors the GitHub repository
+### ✅ Step 6: GitOps with Argo CD
+- Argo CD Application created
+- Git repository connected
+- App auto-synced and healthy
 
-Automatically syncs Kubernetes manifests from /k8s
+> ⛔ Step 7 (Advanced CD automation) intentionally skipped for now.
 
-Ensures the cluster state matches Git
+---
 
-Argo CD Status:
+## 🌐 Access
 
-✅ Application: todo-app
+- **Application:** http://192.168.190.129:30080
+- **Argo CD UI:** http://192.168.190.129:32567
 
-✅ Status: Healthy & Synced
+---
 
-✅ Namespace: todo-app
+## 📸 Screenshots
 
-☸️ Kubernetes Deployment
+> _(Add your screenshots here later if needed)_
 
-Deployment:
+---
 
-Image from Docker Hub
+## 👨‍💻 Author
 
-Environment variables from Kubernetes Secret
-
-Service:
-
-Type: NodePort
-
-Exposed externally
-
-▶️ Run Locally (Optional)
-git clone https://github.com/MinaShahir/Todo-List-nodejs
-cd Todo-List-nodejs
-npm install
-npm start
-
-🐳 Run with Docker
-docker build -t minashahir/todo-list-nodejs:1.0 .
-docker run -p 4000:4000 minashahir/todo-list-nodejs:1.0
-
-✨ Features
-
-Create, update, and delete tasks
-
-Mark tasks as completed
-
-MongoDB persistent storage
-
-Dockerized application
-
-CI/CD automation
-
-GitOps-based deployment
-
-👨‍💻 Author
-
-Mina Shahir
-DevOps Engineer (Junior)
-
+**Mina Shahir**  
+DevOps Engineer (Junior)  
+📧 Email: minashahir@yahoo.com
 🔗 GitHub: https://github.com/MinaShahir
 
-🎯 Project Status
+---
 
-✅ Step 1: Application setup
-✅ Step 2: Dockerization
-✅ Step 3: Push image to Docker Hub
-✅ Step 4: Kubernetes deployment
-✅ Step 5: Argo CD GitOps
-✅ Step 6: CI with GitHub Actions
-⏸️ Step 7: Image Updater (Paused)
+## 🎯 Key DevOps Skills Demonstrated
 
-🏁 Final Notes
+- Docker & container lifecycle
+- CI pipelines with GitHub Actions
+- Kubernetes workloads & services
+- GitOps using Argo CD
+- Debugging real-world Git & CI/CD issues
 
-This project demonstrates:
+---
 
-Real CI/CD pipelines
+## 📌 Notes
 
-Kubernetes production concepts
+This project is designed as a **real-world DevOps learning project**, focusing on practical issues such as:
+- CI authentication
+- Docker image management
+- Kubernetes networking
+- Git conflicts & rebasing
+- GitOps best practices
 
-GitOps best practices
+---
 
-End-to-end DevOps workflow
+## ✅ Status
+
+✔ Application Healthy  
+✔ CI Pipeline Working  
+✔ Argo CD Synced  
+✔ Kubernetes Running  
