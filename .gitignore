@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+*.log
+
+# Kubernetes secrets
+*kubeconfig*
+*.pem
+
+# OS files
+.DS_Store
+
